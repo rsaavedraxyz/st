@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Liberation Mono for powerline:pixelsize=15:antialias=true:autohint=true";
-static char *font2[] = { "Noto Color Emoji:pixelsize=10:antialias=true:autohint=true" };
+static char *font2[] = { "Noto Color Emoji:pixelsize=15:antialias=true:autohint=true", "DejaVuSansMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", };
 static int borderpx = 8;
 
 /*
@@ -93,7 +93,7 @@ const int boxdraw_braille = 1;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "st";
 
 /*
  * spaces per tab
@@ -219,6 +219,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
