@@ -61,7 +61,7 @@ static double maxlatency = 33;
  * Synchronized-Update timeout in ms
  * https://gitlab.com/gnachman/iterm2/-/wikis/synchronized-updates-spec
  */
-static uint su_timeout = 200;
+static uint su_timeout = 100;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -221,8 +221,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+	{ Mod1Mask,             XK_C,           clipcopy,       {.i =  0} },
+	{ Mod1Mask,             XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ Mod1Mask,             XK_v,           selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
