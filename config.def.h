@@ -7,7 +7,7 @@
  */
 static char *font = "Liberation Mono for powerline:pixelsize=15:antialias=true:autohint=true";
 static char *font2[] = { "Noto Color Emoji:pixelsize=15:antialias=true:autohint=true", "DejaVuSansMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", };
-static int borderpx = 8;
+static int borderpx = 6;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -93,7 +93,7 @@ const int boxdraw_braille = 1;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st";
+char *termname = "st-256color";
 
 /*
  * spaces per tab
@@ -113,7 +113,7 @@ char *termname = "st";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.9;
+float alpha = 0.88;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
