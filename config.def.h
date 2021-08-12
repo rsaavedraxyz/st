@@ -7,7 +7,7 @@
  */
 static char *font = "Liberation Mono for powerline:pixelsize=15:antialias=true:autohint=true";
 static char *font2[] = { "Noto Color Emoji:pixelsize=15:antialias=true:autohint=true", "DejaVuSansMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", };
-static int borderpx = 6;
+static int borderpx = 3;
 
 /*
  * What program is execed by st depends of these precedence rules:
