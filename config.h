@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono for powerline:pixelsize=15:antialias=true:autohint=true";
+static char *font = "DejaVu Sans Mono:pixelsize=15:antialias=true:autohint=true";
 static char *font2[] = { "Noto Color Emoji:pixelsize=15:antialias=true:autohint=true", "DejaVuSansMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", };
 static int borderpx = 3;
 
@@ -61,7 +61,7 @@ static double maxlatency = 33;
  * Synchronized-Update timeout in ms
  * https://gitlab.com/gnachman/iterm2/-/wikis/synchronized-updates-spec
  */
-static uint su_timeout = 100;
+static uint su_timeout = 300;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
