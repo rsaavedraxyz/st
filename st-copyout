@@ -7,4 +7,4 @@ trap 'rm "$tmpfile"' 0 1 15
 sed -n "w $tmpfile"
 sed -i 's/\x0//g' "$tmpfile"
 chosen="$(cat "$tmpfile" | grep -E '^.{6,}$' | grep -v "^>" | grep -v "\[*\]" | sed '/^$/d' | uniq | tail -n 8 | tac | dmenu -p "Copy line:" -i -l 4 | sed 's/[^^]/[&]/g; s/\^/\\^/g')"
-grep "$chosen" "$tmpfile" | xclip -selection clipboard
+grep "$chosen" "$tmpfile" | tr -d "\n" | xclip -selection clipboard
